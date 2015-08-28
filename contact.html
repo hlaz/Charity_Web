@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Webpage </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<script> 
+   $(function(){
+      $('.header').load("header.html"); 
+   });
+   </script>
+   
+   <script> 
+   $(function(){
+      $('.footer').load("footer.html"); 
+   });
+  </script>
+  
+	
+</head>
+
+<style>
+
+.top {
+
+font-size:22px;
+text-align:left;
+margin-top:60px;
+margin-bottom:30px;
+padding-top:90px;
+padding:30px;
+}
+
+.require {
+color:red;}
+
+</style>
+
+<body>
+
+<div>
+<br>
+</div>
+
+
+<div class="header"> </div>
+<div class="container">
+<div><br></div>
+<div>
+<span class="top"> We'd <b>love</b> to hear from you. </span>
+</div>
+<div> <br></div>
+
+<div>
+
+<form class="email" action="email.php" method="post">
+<div class="col-sm-6">
+
+  <label>Name <span class="require">*</span> :</label>
+  <input name="user" class="form-control" id="user">
+
+
+  <label>Subject <span class="require">*</span> :</label>
+  <input name="subject" class="form-control" id="subject">
+
+  <label>Phone number <span class="phone">*</span> :</label>
+  <input name="phone" class="form-control" id="phone">
+
+</div>
+
+<div class="col-sm-6">
+<div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="6" id="comment" name="comment"></textarea>
+</div>
+
+
+<input class="send pull-right" type="submit" value="Submit" id="submit" name="submit">
+<!--<button type="button" value="Send" class="btn btn-success btn-md pull-right">Submit</button>-->
+
+</div>
+
+</form>
+</div>
+
+</div>
+<div class="footer"> </div>
+
+</body>
+
+
+</html>
