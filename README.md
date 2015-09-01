@@ -4,7 +4,14 @@ Charity web design
 
 Things to do --
 
-Log_in function -> php+mySQL 
-search function 
+Log in page, registration page
+Finish Donate Us, payment page
+validation -> done on testing file, need to use it on Contact Us form, donate, log in file.
 
-one or two unique functions that catch people's attention
+----------
+Tables 
+
+User | Payment Option | Payment History (amount, program, payment type) | Programs
+
+relational databse table - less data, table - solid data
+¤¤ study difference between mySQL vs Oracle
