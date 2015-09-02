@@ -4,10 +4,9 @@ Charity web design
 
 Things to do --
 
-Log in page, registration page
-い other than just bootstrap, planning to use php and mysql.
-い create table ->  id | username | password
-い main login page, checklogin page to check information, login fail and success page, -> maybe encrypt password at the end
+Finished login, register page. 
+い login page works with the id & password in database. Need make register page work. -> maybe encrypt password at the end
+
 Finish Donate Us, payment page -> found a plugin to do this. Rest should be easy
 validation -> done. Submit function needs little fix 
 
