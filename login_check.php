@@ -12,6 +12,7 @@ define('DB_HOST', 'localhost');
  function SignIn() 
  { 
 	session_start(); 
+	echo "connected";
 	
 	if  (!empty($_POST['user'])) 
 		
@@ -35,6 +36,7 @@ define('DB_HOST', 'localhost');
 		
 		if(isset($_POST['submit']))
 
-			{ SignIn(); } 
+			{ echo "submit is submitted"; 
+			SignIn(); } 
 			
 ?>
