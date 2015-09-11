@@ -2,18 +2,11 @@
 Charity web design
 
 
+Registration, Login -> Done, used prepare statement & encrypt password to avoid SQL injection and make it more secure.
+Need to apply validation I used on contact us form.
+
 Things to do --
 
-Finished login, register page. 
-¤¤ login page works with the id & password in database. Need make register page work. -> maybe encrypt password at the end
-
-Finish Donate Us, payment page -> found a plugin to do this. Rest should be easy
-validation -> done. Submit function needs little fix 
+Donate Us page -> credit card option. This will contain User name, payment amount, payment option, program option, date.
 
 ----------
-Tables 
-
-User | Payment Option | Payment History (amount, program, payment type) | Programs
-
-relational databse table - less data, table - solid data
-¤¤ study difference between mySQL vs Oracle

@@ -12,15 +12,26 @@ define('DB_HOST', 'localhost');
  define('DB_NAME', 'login');
  define('DB_USER','root');
  define('DB_PASSWORD',''); 
-	 $mysqli = new mysqli(DB_HOST,DB_USER,DB_PASSWORD, DB_NAME);
-	 session_start(); 
  
- if (isset($_POST['user']) && isset($_POST['pass']))
+ session_start(); 
+ 
+	 $mysqli = new mysqli(DB_HOST,DB_USER,DB_PASSWORD, DB_NAME);
+	 
+	 if($mysqli->connect_errno > 0) {
+    die('Unable to connect to database [' . $mysqli->connect_error . ']');
+}
+ 
+ if (isset($_POST['user']) && isset($_POST['pass']) && isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['email']))
  {
 	 $user = $_POST['user'];
 	 $pass = $_POST['pass'];
+	 $fname = $_POST['fname'];
+	 $lname = $_POST['lname'];
+	 $email = $_POST['email'];
+	 $password_hash = password_hash($pass, PASSWORD_DEFAULT);
 	 
-	$sql = "INSERT INTO `username`( `userName`, `pass`) VALUES ('$user',$pass)";
+	 $sql = "INSERT INTO `username`(`userName`, `First_Name`, `Last_Name`, `pass`, `email`) VALUES ('$user','$fname','$lname','$pass', '$email')";
+	//$sql = "INSERT INTO `username`( `userName`, `pass`) VALUES ('$user',$pass)";
 	//$sql = "INSERT INTO 'username' ('UserNameID', 'userName', 'pass') VALUES (NULL, '$user', '$pass')";
 	
 	
