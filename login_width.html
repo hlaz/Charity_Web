@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<script> 
+   $(function(){
+      $('.header').load("header.html"); 
+   });
+   </script>
+   
+   <script> 
+   $(function(){
+      $('.footer').load("footer.html"); 
+   });
+  </script>
+	
+</head>
+    
+  <body>
+  
+  <div class="header"> </div>
+
+    <body class="align">
+
+  <div class="site__container">
+
+    <div class="grid__container">
+
+      <form action="" method="post" class="form form--login">
+
+        <div class="form__field">
+          <label class="fontawesome-user" for="login__username"><span class="hidden">Username</span></label>
+          <input id="login__username" type="text" class="form__input" placeholder="Username" required>
+        </div>
+
+        <div class="form__field">
+          <label class="fontawesome-lock" for="login__password"><span class="hidden">Password</span></label>
+          <input id="login__password" type="password" class="form__input" placeholder="Password" required>
+        </div>
+
+        <div class="form__field">
+          <input type="submit" value="Sign In">
+        </div>
+
+      </form>
+
+      <p class="text--center">Not a member? <a href="#">Sign up now</a> <span class="fontawesome-arrow-right"></span></p>
+
+    </div>
+
+  </div>
+
+</body>
+    
+    <div class="footer"> </div>
+    
+    
+    
+  </body>
+</html>

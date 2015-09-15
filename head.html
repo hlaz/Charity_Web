@@ -63,41 +63,6 @@ fault .navbar-toggle:hover,
 }
 
 
-.modal-content {
-  background-color: #2c3338;
-  color: white;}
-  
- .form_input { 
- width:100%;
- border:none;
-  padding: 1rem;
-  background-color: #434A52;
-  
-  }
-  
-  .close {color:white;}
-  
-  .form_input[type="submit"] {
-  background-color: #ea4c88;
-  color: #eee;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.form_input[type="submit"]:focus, .form_input[type="submit"]:hover {
-  background-color: #d44179;
-}
-
-.form_input[type="register"] {
-  background-color: #e381a6;
-  color: #eee;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align:center;
-}
-.form_input[type="register"]:focus, .form_input[type="register"]:hover {
-  background-color: #df719b;
-}
-
 
 
 </style>
@@ -127,41 +92,14 @@ fault .navbar-toggle:hover,
                 <li><a href="programs.html">Programs</a>
                 </li>
                 <li><a href="donate.html">Donate</a></li>
-				<li><a href="#" data-toggle="modal" data-target="#myModal">SIGN IN</a></li>
+				<li><a href="login_main.html">SIGN IN</a></li>
 				<li><a href="register.html">REGISTER</a></li>
             </ul>
           </div>
 		  </div>
 </div>
 
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-  
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title top">Log In Here</h4>
-        </div>
-			<div class="modal-body">
-				<form method="POST" action="login_check.php">
-					
-				<br><input type="text" name="user" class="form_input" placeholder="Username" >
-				<br> 
-					
-				<br><input type="password" name="pass" class="form_input" placeholder="Password" >
- 
-				<br>
-				<br>
-			<input  class="form_input" type="submit" name="submit" value="SIGN In">
-			</form> 
-			<br>
-			
 		
-			
-        </div>
-        <div class="modal-footer">
-		<p class="center">Not a member? <a href="register.html">Sign up now</a> <span class="fontawesome-arrow-right"></span></p>
         </div>
       </div>
       

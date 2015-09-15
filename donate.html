@@ -14,13 +14,13 @@
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+	
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
+	<script src="simple-expand.js"></script>
 	<script> 
    $(function(){
-      $('.header').load("header.html"); 
+      $('.header').load("head.html"); 
    });
    </script>
    
@@ -30,6 +30,11 @@
    });
   </script>
   
+  <script>
+  $(function() {
+   $('.expander').simpleexpand();
+   })
+  </script
 	
 </head>
 
@@ -37,6 +42,9 @@
 
 .main {text-align:center;
 font-size:19px;}
+
+.content {
+display:none;}
 
 </style>
 
@@ -47,13 +55,18 @@ font-size:19px;}
 <br>
 </div>
 
+
 <div class="header"> </div>
 <div class="container">
 <h1 class="main"> Donate Us Page <br><br></h1>
 
 <div class="main col-sm-12">
 <div class="col-sm-6">
-<img src="pic/paypal.jpg">
+<a class="expander" href="#"><img src="pic/paypal.jpg"></a>
+<div class="content">
+	<p> hello, this is the paypal thing </p>
+	<p> asdasdalichioashcioashiochasc</p>
+</div>
 </div>
 <div class="col-sm-6">
 <img src="pic/creditcards.png">

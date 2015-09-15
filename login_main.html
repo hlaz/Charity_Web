@@ -3,8 +3,47 @@
  <head>
  <title>login</title> 
  
- </head> 
- <body id="body-color">
+ <head>
+	<title> Webpage </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<script> 
+   $(function(){
+      $('.header').load("head.html"); 
+   });
+   </script>
+   
+   <script> 
+   $(function(){
+      $('.footer').load("footer.html"); 
+   });
+  </script>
+  
+	
+ </head>
+<body>
+
+<div>
+<br>
+</div>
+
+<div class="header"> </div> 
+<div class="container">
+
+ 
  <div id="Sign-In"> 
  <fieldset style="width:30%">
  <legend>LOG-IN HERE</legend> 
@@ -15,13 +54,14 @@
  Password 
  <br><input type="password" name="pass" size="40">
  
- <br>
- <input id="button" type="submit" name="submit" value="Log-In">
+ <br><br>
+ <input id="button" type="submit" name="submit" value="Log-In"> 
+ <br><br>Not a member? <a href="register.html">Sign up now</a></p>
  </form> 
  </fieldset> 
  </div> 
- 
- 
+</div> 
+ <div class="footer"> </div>
  </body> 
  </html> 
 
