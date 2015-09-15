@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Webpage </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<script> 
+   $(function(){
+      $('.header').load("head_modal.html"); 
+   });
+   </script>
+   
+   <script> 
+   $(function(){
+      $('.footer').load("footer.html"); 
+   });
+  </script>
+  
+	
+</head>
+
+<style>
+
+
+
+.color {color:white;}
+</style>
+
+<body>
+
+<div>
+<br>
+</div>
+
+<div class="header"> </div>
+<div class="container">
+
+<form>
+<table width=600 border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+
+  <tr bgcolor="black"> 
+    <td height="22" colspan="3" align="center" class="color"><strong>&nbsp;Select Programs</strong></td>
+  </tr>
+  <tr> 
+    <td height="22" colspan="3" align="left" valign="middle">&nbsp;</td>
+  </tr>
+    <tr> 
+    <td height="22" width="180" align="right" valign="middle">Select Program : </td>
+    <td colspan="2" align="left">
+	
+	  
+      <SELECT NAME="PROGRAM">
+        
+        <OPTION VALUE="1" SELECTED>Program 1
+        <OPTION VALUE="2">Program 2
+        <OPTION VALUE="3">Program 3
+        <OPTION VALUE="4">Program 4
+        <OPTION VALUE="5">Program 5
+        <OPTION VALUE="6">Program 6
+      </SELECT>
+	  
+	</td>
+  </tr>
+  
+  <tr> 
+    <td height="22" width="180" align="right" valign="middle"> $</td>
+    <td colspan="2" align="left"><input name="firstName" type="text" size="10"></td>
+  </tr>
+  <tr> 
+    <td height="22" colspan="3" align="left" valign="middle">&nbsp;</td>
+  </tr>
+  <tr bgcolor="black"> 
+    <td height="22" colspan="3" align="center" class="color"><strong>&nbsp;Billing Information</strong></td>
+  </tr>
+  <tr> 
+    <td height="22" colspan="3" align="left" valign="middle">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="22" width="180" align="right" valign="middle">First Name : </td>
+    <td colspan="2" align="left"><input name="firstName" type="text" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Last Name : </td>
+    <td colspan="2" align="left"><input name="lastName" type="text" size="50"></td>
+  </tr> 
+  <tr> 
+    <td height="22" align="right" valign="middle">Street Address : </td>
+    <td colspan="2" align="left"><input name="address1" type="text" value="" size="50"></td>
+  </tr> 
+  <tr> 
+    <td height="22" align="right" valign="middle">Street Address (2) : </td>
+    <td colspan="2" align="left"><input name="address2" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">City : </td>
+    <td colspan="2" align="left"><input name="city" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">State/Province : </td>
+    <td colspan="2" align="left"><input name="state" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Zip/Postal Code : </td>
+    <td colspan="2" align="left"><input name="zip" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Country : </td>
+    <td colspan="2" align="left"><input name="country" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Phone : </td>
+    <td colspan="2" align="left"><input name="phone" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" colspan="3" align="left" valign="middle">&nbsp;</td>
+  </tr>
+  <tr bgcolor="black"> 
+    <td height="22" colspan="3" align="center" class="color"><strong>&nbsp;Credit Card</strong></td>
+  </tr>
+  <tr> 
+    <td height="22" colspan="3" align="left" valign="middle">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Credit Card Number : </td>
+    <td colspan="2" align="left"><input name="CCNo" type="text" value="" size="50" maxlength="40"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Expiry Date : </td>
+    <td colspan="2" align="left">
+      <SELECT NAME="CCExpiresMonth" >
+        
+        <OPTION VALUE="01" SELECTED>January 
+        <OPTION VALUE="02">February 
+        <OPTION VALUE="03">March
+        <OPTION VALUE="04">April 
+        <OPTION VALUE="05">May 
+        <OPTION VALUE="06">June
+        <OPTION VALUE="07">July 
+        <OPTION VALUE="08">August 
+        <OPTION VALUE="09">September
+        <OPTION VALUE="10">October 
+        <OPTION VALUE="11">November
+        <OPTION VALUE="12">December 
+      </SELECT> 
+	  
+	  /
+	  
+	  
+      <SELECT NAME="CCExpiresYear">
+        
+        <OPTION VALUE="13" SELECTED>2013
+        <OPTION VALUE="14">2014
+        <OPTION VALUE="15">2015
+        <OPTION VALUE="16">2016
+        <OPTION VALUE="17">2017
+        <OPTION VALUE="18">2018
+        <OPTION VALUE="19">2019
+        <OPTION VALUE="20">2020
+      </SELECT>
+    </td>
+  </tr>
+    <tr> 
+    <td height="22" align="right" valign="middle">Securyti code ("CVC") : </td>
+    <td colspan="2" align="left"><input name="cvc" type="text" value="" size="15"></td>
+  </tr>
+    <tr> 
+    <td height="22" align="right" valign="middle">Card Holder's name : </td>
+    <td colspan="2" align="left"><input name="cardname" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" colspan="3" align="left" valign="middle">&nbsp;</td>
+  </tr>
+</table>
+<p><input name="Submit" type="submit" value="Submit"></p>
+</form>
+
+
+
+</div>
+ <div class="footer"></div>
+</body>
+
+
+
+</html>

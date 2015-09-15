@@ -20,7 +20,7 @@
 
 	<script> 
    $(function(){
-      $('.header').load("head.html"); 
+      $('.header').load("head_modal.html"); 
    });
    </script>
    
