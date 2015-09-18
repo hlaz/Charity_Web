@@ -14,7 +14,7 @@ define('DB_HOST', 'localhost');
 	session_start(); 
 	//echo "connected";
 	
-	if  (!empty($_POST['user'])) 
+	if  (!empty($_POST['user']) && !empty($_POST['pass'])) 
 		
 	{ 
 		$query = mysql_query("SELECT * FROM UserName where userName = '$_POST[user]' AND pass = '$_POST[pass]'") or die(mysql_error()); 
@@ -23,8 +23,8 @@ define('DB_HOST', 'localhost');
 		if(!empty($row['userName']) AND !empty($row['pass'])) 
 		
 		{ 
-		$_SESSION['userName'] = $row['pass'];
-		echo "LOGIN SUCCESS"; 
+		$_SESSION['userName'] = ($_POST['user']);
+		header("Location: login_success.html");
 		} 
 		else {
 			echo "LOGIN FAILED"; 
